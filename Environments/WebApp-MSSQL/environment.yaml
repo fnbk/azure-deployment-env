@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://github.com/Azure/deployment-environments/releases/download/2022-11-11-preview/manifest.schema.json
+
+name: WebApp-MSSQL
+version: 1.0.0
+summary: Azure Web App Environment with SQL Server
+description: Deploys an Azure Web App with SQL Server as data store
+runner: ARM
+templatePath: azuredeploy.json
+
+parameters:
+
+  - id: environmentName
+    name: EnvironmentName
+    description: Name of the Web App.
+    type: string
+    required: true
+
+  - id: location
+    name: Location
+    description: Optional parameter - Location to deploy the environment resources
+    default: ""
+    type: string
+    required: false
+
+  - id: userOrAppId
+    name: UserOrAppId
+    description: Optional parameter - provide your User ID (GUID) if you want access to sqlAdminPassword and appUserPassword.
+    default: ""
+    type: string
+    required: false
+
