@@ -43,6 +43,7 @@ The `build.ps1` PowerShell script will traverse all subfolders and transpile the
 * Generate a GitHub Access Token to enable secure access to your repository.
 * Take note of the GitHub repository URL, for example: https://github.com/fnbk/azure-deployment-env.git
 * Use the token and repository link to add a new catalog to DevCenter, integrating your ADE templates into the developer workflow.
+    * create keyvault, add secret, get link to secret, e.g. https://kvabcdefgh.vault.azure.net/secrets/github-pat/508a0aea14a14391a9a0e28ba45bf42c
 
 
 
